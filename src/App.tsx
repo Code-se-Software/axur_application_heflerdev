@@ -1,7 +1,12 @@
 import React from "react";
+import HomeView from "./pages/Home/HomeView";
 
 const App = (): any => {
-   return <div>Hello, World!</div>;
+   return(
+       <main>
+          <HomeView />
+       </main>
+   )
 };
 
 export default App;
