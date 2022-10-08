@@ -21,13 +21,16 @@
   },
   "homepage": "https://github.com/Code-se-Software/axur_application_heflerdev#readme",
   "dependencies": {
+    "bootstrap": "^5.2.2",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.5.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.2"
   },
   "devDependencies": {
     "@babel/core": "^7.19.3",
     "@babel/preset-react": "^7.18.6",
+    "@iconify/react": "^4.0.0",
     "@types/react-dom": "^18.0.6",
     "babel-loader": "^8.2.5",
     "css-loader": "^6.7.1",

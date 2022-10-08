@@ -1,0 +1,22 @@
+.home-header {
+  > .icon {
+    display: flex;
+    justify-content: center;
+
+    > svg {
+      border-radius: 50%;
+      overflow: hidden;
+    }
+  }
+
+  > .text {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 16px;
+  }
+}
