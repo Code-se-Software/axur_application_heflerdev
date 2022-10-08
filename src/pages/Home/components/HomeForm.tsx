@@ -1,8 +1,16 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
+import {searchService} from "../../../services/SearchService";
 
 const HomeForm = () => {
-    function handleChange() {
+    const [query, setQuery]: [query: string, setQuery: any] = useState("");
 
+    useEffect(() => {
+        searchService(query)
+            .then(res => console.log(res))
+    }, [query])
+
+    function handleChange({target}: { target: any }) {
+        setQuery(target.value)
     }
 
     function handleSubmit() {
