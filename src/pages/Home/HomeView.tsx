@@ -1,13 +1,13 @@
 import React from "react";
 import {Container} from "react-bootstrap";
-import HomeHeader from "./components/HomeHeader";
-import HomeForm from "./components/HomeForm";
+import {Form, Header, Results} from "./components";
 
 const HomeView = (): any => {
     return (
         <Container>
-            <HomeHeader/>
-            <HomeForm/>
+            <Header/>
+            <Form/>
+            <Results/>
         </Container>
     )
 }

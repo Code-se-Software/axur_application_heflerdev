@@ -2,11 +2,13 @@ import {createSlice, PayloadAction} from '@reduxjs/toolkit'
 import type {RootState} from "../store";
 
 interface WebsiteState {
-    value: String[]
+    database: String[]
+    data: string
 }
 
 const initialState = {
-    value: [],
+    database: [],
+    data: ""
 } as WebsiteState
 
 export const websiteSlice = createSlice({
@@ -14,11 +16,12 @@ export const websiteSlice = createSlice({
     initialState,
     reducers: {
         insertData: (state, action: PayloadAction<string>) => {
-            state.value = [...state.value, action.payload];
+            state.database = [...state.database, action.payload];
+            state.data = action.payload
         },
     },
 })
 
 export const {insertData} = websiteSlice.actions
-export const selectData = (state: RootState) => state.website.value
+export const selectDatabase = (state: RootState) => state.website.database
 export default websiteSlice.reducer

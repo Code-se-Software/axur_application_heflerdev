@@ -1,4 +1,4 @@
-export const searchService = async (param: string): Promise<Response> => {
+export const searchService = async (param: string): Promise<{ id: string }> => {
 
     const obj: RequestInit = {
         method: "POST",

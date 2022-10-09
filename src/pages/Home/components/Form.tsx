@@ -1,16 +1,20 @@
 import React, {Dispatch, SetStateAction, useEffect, useState} from "react";
-import {searchService} from "../../../services/SearchService";
+import {searchService} from "../../../services";
 import {MagnifyingGlass} from "../../../assets/icons/Icons";
 import {Button, Stack} from "react-bootstrap";
+import {useDispatch} from "react-redux";
+import {AppDispatch} from "../../../redux/store";
+import {insertData} from "../../../redux/slices/websiteSlice";
 
-const HomeForm = () => {
+export const Form = () => {
     const [query, setQuery]: [query: string, setQuery: Dispatch<SetStateAction<string>>] = useState("");
     const [submit, setSubmit]: [submit: string, setSubmit: Dispatch<SetStateAction<string>>] = useState("abcde");
     const [errors, setErrors]: [errors: Array<string>, setErrors: Dispatch<SetStateAction<String[]>>] = useState([]);
+    const dispatch: AppDispatch = useDispatch()
 
     useEffect(() => {
         searchService(submit)
-            .then(res => console.log(res))
+            .then(res => dispatch(insertData(res.id)))
     }, [submit])
 
     function handleChange({target}: { target: any }) {
@@ -39,5 +43,3 @@ const HomeForm = () => {
         </form>
     )
 }
-
-export default HomeForm;
