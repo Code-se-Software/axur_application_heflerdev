@@ -1,4 +1,4 @@
-export const resultsService = async (id: string): Promise<Response> => {
+export const resultsService = async (id: string): Promise<{ id: string, status: string, urls: String[] }> => {
     const obj: RequestInit = {
         method: "GET",
         mode: "cors",

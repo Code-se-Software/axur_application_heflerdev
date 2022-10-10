@@ -1,0 +1,20 @@
+@use "colors";
+
+.list-container {
+  margin: 20px auto;
+  padding: 30px 0px;
+  background-color: $secondary;
+  color: $light;
+  overflow-x: scroll;
+  border-radius: 20px;
+
+  .even {
+    background-color: $light;
+    color: $dark;
+  }
+
+  .even,
+  .odd {
+    padding: 10px;
+  }
+}

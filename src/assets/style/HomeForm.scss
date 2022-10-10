@@ -8,6 +8,18 @@
   border-radius: 20px;
   overflow: hidden;
 
+  > .success {
+    color: $success;
+  }
+
+  > .error {
+    color: $danger;
+  }
+
+  .success,
+  .error {
+  }
+
   > .submit {
     padding: 0 20px;
     border-left: solid $light 1px;
@@ -26,7 +38,6 @@
         transition: 0.2s;
       }
     }
-
   }
 
   > input {
@@ -35,6 +46,10 @@
     border: none;
     padding: 0 1rem;
     color: $light;
+
+    &::placeholder {
+      color: $light;
+    }
 
     &:focus {
       outline: none;
