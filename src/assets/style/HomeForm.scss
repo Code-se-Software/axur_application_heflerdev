@@ -32,6 +32,10 @@
       display: flex;
     }
 
+    > svg {
+      color: $light;
+    }
+
     &:hover {
       cursor: pointer;
       transition: 0.2s;
@@ -61,6 +65,12 @@
 }
 
 .submit-button {
+  > svg {
+    color: $light;
+  }
+
+  margin-bottom: 20px;
+
   @include media-breakpoint-up(sm) {
     display: none;
   }

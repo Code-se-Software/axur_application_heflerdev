@@ -5,11 +5,13 @@
 
     > svg {
       border-radius: 50%;
+      color: $primary;
       overflow: hidden;
     }
   }
 
   > .text {
+    color: $dark;
     margin: 1rem 0;
     display: flex;
     justify-content: center;

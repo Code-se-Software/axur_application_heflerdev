@@ -41,11 +41,11 @@ export const Form = () => {
                     </div>
                     <input type="text" placeholder={"Need to have 4+ letters."} onChange={handleChange} value={query}/>
                     <div className="submit" onClick={handleSubmit}>
-                        <MagnifyingGlass width={28} color={"white"}/>
+                        <MagnifyingGlass width={28}/>
                     </div>
                 </div>
                 <Button className="submit-button" type={"submit"}>
-                    <MagnifyingGlass width={28} color={"white"}/>
+                    <MagnifyingGlass width={28}/>
                 </Button>
             </Stack>
         </form>

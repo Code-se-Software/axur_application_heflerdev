@@ -6,7 +6,7 @@ export const Header = () => (
     <Container>
         <Stack className={"home-header"}>
             <div className={"icon"}><UnicornIcon width={78}/></div>
-            <div className={"text"}>UniSearcher</div>
+            <div className={"text"}>UniCrawler</div>
         </Stack>
     </Container>
 )
