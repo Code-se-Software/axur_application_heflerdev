@@ -24,6 +24,10 @@ module.exports = {
                 use: "babel-loader"
             },
             {
+                test: /\.(png|jpe?g|gif)$/i,
+                use: "file-loader?name=src/assets/images/[name].[ext]"
+            },
+            {
                 test: /\.tsx?$/,
                 use: 'ts-loader',
                 exclude: /node_modules/,

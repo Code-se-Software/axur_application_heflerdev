@@ -15,7 +15,7 @@ export const Form = () => {
     useEffect(() => {
         if (submit.length > 4) {
             searchService(submit)
-                .then(res => dispatch(insertData(res.id)))
+                .then(res => dispatch(insertData({id: res.id, keyword: submit})))
         }
     }, [submit])
 
@@ -36,16 +36,16 @@ export const Form = () => {
                 <div className="search-bar">
                     <div className={query.length <= 4 ? "error" : "success"}>
                         {
-                            query.length <= 4 ? (<ErrorIcon/>) : (<CheckIcon/>)
+                            query.length <= 4 ? (<ErrorIcon height={30}/>) : (<CheckIcon height={30}/>)
                         }
                     </div>
                     <input type="text" placeholder={"Need to have 4+ letters."} onChange={handleChange} value={query}/>
                     <div className="submit" onClick={handleSubmit}>
-                        <MagnifyingGlass size={28} color={"white"}/>
+                        <MagnifyingGlass width={28} color={"white"}/>
                     </div>
                 </div>
                 <Button className="submit-button" type={"submit"}>
-                    <MagnifyingGlass size={28} color={"white"}/>
+                    <MagnifyingGlass width={28} color={"white"}/>
                 </Button>
             </Stack>
         </form>
