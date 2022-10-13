@@ -2,7 +2,7 @@
   "name": "axur_application_heflerdev",
   "version": "1.0.0",
   "description": "Application for selective process",
-  "main": "index.js",
+  "main": "index.tsx",
   "scripts": {
     "test": "jest",
     "start": "webpack serve --mode development"

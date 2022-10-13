@@ -1,10 +1,10 @@
 import React, {Dispatch, SetStateAction, useEffect, useState} from "react";
 import {Col, Row} from "react-bootstrap";
-import {resultsService} from "services";
 import {useSelector} from "react-redux";
-import {RootState} from "redux/store";
-import {NoResultsFound} from "assets/images";
-import PaginatedItems from "components/Paginate";
+import {RootState} from "src/redux/store";
+import {resultsService} from "src/services";
+import {NoResultsFound} from "src/assets/images";
+import PaginatedItems from "src/components/Paginate";
 
 export const Results = () => {
     const id = useSelector((state: RootState) => state.website.data);
