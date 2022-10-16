@@ -1,10 +1,10 @@
-import React, {Dispatch, EventHandler, SetStateAction, SyntheticEvent, useEffect, useState} from "react";
-import {searchService} from "../../../services";
-import {CheckIcon, ErrorIcon, MagnifyingGlass} from "../../../assets/icons/Icons";
+import React, {Dispatch, SetStateAction, SyntheticEvent, useEffect, useState} from "react";
+import {searchService} from "src/services";
+import {CheckIcon, ErrorIcon, MagnifyingGlass} from "src/assets/icons/Icons";
 import {Button, Stack} from "react-bootstrap";
 import {useDispatch} from "react-redux";
-import {AppDispatch} from "../../../redux/store";
-import {insertData} from "../../../redux/slices/websiteSlice";
+import {AppDispatch} from "src/redux/store";
+import {insertData} from "src/redux/slices/websiteSlice";
 
 export const Form = () => {
     const [query, setQuery]: [query: string, setQuery: Dispatch<SetStateAction<string>>] = useState("");
@@ -25,7 +25,7 @@ export const Form = () => {
 
     function handleSubmit(e: SyntheticEvent) {
         e.preventDefault()
-        if (query.length > 4) {
+        if (query.length > 4 && query.length <= 32) {
             setSubmit(query);
         }
     }

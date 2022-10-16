@@ -1,5 +1,5 @@
 import React from "react";
-import {Icon, IconifyIcon} from "@iconify/react";
+import {Icon} from "@iconify/react";
 
 interface Icon {
     width?: number | string
@@ -35,4 +35,8 @@ export const SavedIcon = ({width, height, color}: Icon) => (
 
 export const NullIcon = ({width, height, color}: Icon) => (
     <Icon icon="fluent:border-none-20-regular" width={width} height={height} color={color}/>
+)
+
+export const RefreshIcon = ({width, height, color}: Icon) => (
+    <Icon icon={"bx:refresh"} width={width} height={height}/>
 )

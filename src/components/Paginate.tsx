@@ -19,8 +19,9 @@ const Items = ({currentItems}: { currentItems: Array<string> }) => {
     );
 }
 
-const PaginatedItems = ({itemsPerPage, items}: Paginated) => {
+const Paginate = ({itemsPerPage, items}: Paginated) => {
     const [currentItems, setCurrentItems] = useState(null);
+
     const [pageCount, setPageCount] = useState(0);
     const [itemOffset, setItemOffset] = useState(0);
 
@@ -54,4 +55,4 @@ const PaginatedItems = ({itemsPerPage, items}: Paginated) => {
     );
 }
 
-export default PaginatedItems;
+export default Paginate;

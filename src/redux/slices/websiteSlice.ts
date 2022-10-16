@@ -19,9 +19,17 @@ export const websiteSlice = createSlice({
             state.database = [...state.database, action.payload];
             state.data = action.payload.id
         },
+        removeData: (state, action: PayloadAction<any>) => {
+            state.database.map((item, index) => {
+                if (item.id === action.payload) return state.database.splice(index, 1)
+            })
+        },
+        setData: (state, {payload}: PayloadAction<any>) => {
+            state.data = payload
+        }
     },
 })
 
-export const {insertData} = websiteSlice.actions
+export const {insertData, removeData, setData} = websiteSlice.actions
 export const selectDatabase = (state: RootState) => state.website.database
 export default websiteSlice.reducer
