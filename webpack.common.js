@@ -5,9 +5,10 @@ const HTMLWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
     entry: "./src/index.tsx",
     output: {
-        filename: "bundle.js",
+        filename: "[name].bundle.js",
         path: path.resolve("dist"),
-        publicPath: "/",
+        clean: true,
+        publicPath: "/"
     },
     devServer: {
         static: {
@@ -54,7 +55,8 @@ module.exports = {
     },
     plugins: [
         new HTMLWebpackPlugin({
-            template: "src/index.html"
+            template: "src/index.html",
+            title: "Production"
         }),
     ]
 }
