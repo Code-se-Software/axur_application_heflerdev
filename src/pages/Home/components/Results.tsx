@@ -4,6 +4,7 @@ import {useSelector} from "react-redux";
 import {RootState} from "src/redux/store";
 import {resultsService} from "src/services";
 import {RefreshIcon} from "src/assets/icons/Icons";
+import {NoResultsFound} from "src/assets/images";
 
 export const Results = () => {
     const id = useSelector((state: RootState) => state.website.data);
@@ -62,7 +63,7 @@ export const Results = () => {
                     </Row>
                 ) : (
                     <>
-                        <div className={"mt-3"}>No Results Found.</div>
+                        <div className={"mt-3"}><NoResultsFound/></div>
                         <div></div>
                     </>
 
