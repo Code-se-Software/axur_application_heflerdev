@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header> renders correctly 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="vstack gap-3 minBreakpoint-xs"
+  >
+    <div
+      className="search-bar"
+    >
+      <div
+        className="error"
+      >
+        <span />
+      </div>
+      <input
+        onChange={[Function]}
+        placeholder="Need to have 4+ letters."
+        type="text"
+        value=""
+      />
+      <div
+        className="submit"
+        onClick={[Function]}
+      >
+        <span />
+      </div>
+    </div>
+    <button
+      className="submit-button btn btn-primary"
+      disabled={false}
+      type="submit"
+    >
+      <span />
+    </button>
+  </div>
+</form>
+`;

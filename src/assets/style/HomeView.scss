@@ -1,0 +1,30 @@
+.homeview-container {
+  > .content {
+    min-height: 100vh;
+    justify-content: center;
+  }
+
+  .container {
+    margin: 20px 0;
+
+  }
+}
+
+.data-message {
+  opacity: 0.4;
+
+  .icon {
+    opacity: 0.4;
+    display: flex;
+    justify-content: center;
+  }
+
+  > .text {
+    font-size: large;
+    font-weight: bolder;
+  }
+
+  > p {
+    text-align: center;
+  }
+}

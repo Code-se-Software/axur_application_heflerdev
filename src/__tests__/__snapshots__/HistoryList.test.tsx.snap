@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HistoryList> renders correctly 1`] = `
+<div
+  className="vstack gap-1 minBreakpoint-xs"
+>
+  <div
+    className="title-container"
+  >
+    <div
+      className="id"
+    >
+      Id (Click to view)
+    </div>
+    <div>
+      |
+    </div>
+    <div
+      className="keyword"
+    >
+      Search Term
+    </div>
+    <div>
+      |
+    </div>
+    <div
+      className="delete"
+    >
+      Delete
+    </div>
+  </div>
+</div>
+`;
