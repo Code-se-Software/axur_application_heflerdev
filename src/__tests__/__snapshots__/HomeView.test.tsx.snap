@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HomeView> renders correctly 1`] = `
+<div
+  className="homeview-container container"
+>
+  <div
+    className="content vstack minBreakpoint-xs"
+  >
+    <div
+      className="justify-content-center row"
+    >
+      <div
+        className="col-12"
+      >
+        <div
+          className="container"
+        >
+          <div
+            className="home-header vstack minBreakpoint-xs"
+          >
+            <div
+              className="icon"
+            >
+              <span />
+            </div>
+            <div
+              className="text"
+            >
+              UniCrawler
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="col-lg-7 col-md-8 col-12"
+      >
+        <form
+          onSubmit={[Function]}
+        >
+          <div
+            className="vstack gap-3 minBreakpoint-xs"
+          >
+            <div
+              className="search-bar"
+            >
+              <div
+                className="error"
+              >
+                <span />
+              </div>
+              <input
+                onChange={[Function]}
+                placeholder="Need to have 4+ letters."
+                type="text"
+                value=""
+              />
+              <div
+                className="submit"
+                onClick={[Function]}
+              >
+                <span />
+              </div>
+            </div>
+            <button
+              className="submit-button btn btn-primary"
+              disabled={false}
+              type="submit"
+            >
+              <span />
+            </button>
+          </div>
+        </form>
+      </div>
+      <div
+        className="container col-12"
+      >
+        <div
+          className="data-message vstack gap-2 minBreakpoint-xs"
+        >
+          <div
+            className="icon"
+          >
+            <span />
+          </div>
+          <p
+            className="text"
+          >
+            No content to display
+          </p>
+          <p>
+            To create a new Request, type a keyword on the searchbar above.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
